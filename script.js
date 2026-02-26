@@ -1,14 +1,13 @@
-function setLanguage(lang) {
-    document.querySelectorAll("[data-es]").forEach(el => {
-        el.textContent = el.getAttribute("data-" + lang);
-    });
+const fades = document.querySelectorAll('.fade');
+
+function reveal() {
+fades.forEach(el => {
+const top = el.getBoundingClientRect().top;
+if (top < window.innerHeight - 100) {
+el.classList.add('visible');
+}
+});
 }
 
-window.addEventListener("scroll", () => {
-    document.querySelectorAll(".fade-in").forEach(el => {
-        const position = el.getBoundingClientRect().top;
-        if (position < window.innerHeight - 100) {
-            el.classList.add("visible");
-        }
-    });
-});
+window.addEventListener('scroll', reveal);
+window.addEventListener('load', reveal);
