@@ -1,127 +1,119 @@
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #ffffff;
-    color: #222;
-    scroll-behavior: smooth;
+margin: 0;
+font-family: 'Inter', sans-serif;
+background: #ffffff;
+color: #222;
+scroll-behavior: smooth;
 }
 
-.container {
-    width: 85%;
-    max-width: 1000px;
-    margin: auto;
+.hero {
+padding: 100px 10%;
+background: linear-gradient(120deg,#f8f9fc,#eef1f7);
 }
 
-header {
-    padding: 80px 0 40px 0;
-    text-align: center;
+.hero-content {
+display: flex;
+align-items: center;
+gap: 60px;
+flex-wrap: wrap;
+}
+
+.profile-pic {
+width: 180px;
+height: 180px;
+border-radius: 50%;
+object-fit: cover;
+box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 42px;
-    margin-bottom: 10px;
+font-family: 'Playfair Display', serif;
+font-size: 42px;
+margin-bottom: 10px;
 }
 
 .subtitle {
-    font-weight: 300;
-    margin-bottom: 20px;
+font-weight: 300;
+color: #444;
 }
 
-nav {
-    margin-top: 20px;
-}
-
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: 400;
-    color: #333;
-    position: relative;
-}
-
-nav a::after {
-    content: "";
-    width: 0%;
-    height: 1px;
-    background: #000;
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    transition: 0.3s;
-}
-
-nav a:hover::after {
-    width: 100%;
+.academic-links a {
+margin-right: 20px;
+text-decoration: none;
+font-weight: 500;
+color: #1f2a44;
 }
 
 .section {
-    padding: 80px 0;
+padding: 90px 10%;
 }
 
-.dark {
-    background: #111;
-    color: #eee;
-}
-
-.dark h2 {
-    color: white;
+.alt {
+background: #f4f6fa;
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 20px;
+font-family: 'Playfair Display', serif;
+margin-bottom: 25px;
 }
 
-ul {
-    line-height: 1.8;
+.pub {
+margin-bottom: 15px;
 }
 
-.button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: 1px solid #000;
-    text-decoration: none;
-    color: #000;
-    transition: 0.3s;
+.timeline {
+border-left: 2px solid #1f2a44;
+padding-left: 30px;
 }
 
-.dark .button {
-    border: 1px solid #fff;
-    color: #fff;
+.timeline-item {
+margin-bottom: 30px;
+position: relative;
 }
 
-.button:hover {
-    background: #000;
-    color: #fff;
+.timeline-item::before {
+content: "";
+width: 12px;
+height: 12px;
+background: #1f2a44;
+border-radius: 50%;
+position: absolute;
+left: -38px;
+top: 5px;
 }
 
-.dark .button:hover {
-    background: #fff;
-    color: #000;
+.year {
+font-weight: bold;
+color: #1f2a44;
 }
 
-.language-switch button {
-    margin: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
+.fade {
+opacity: 0;
+transform: translateY(20px);
+transition: all 0.8s ease;
 }
 
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.8s ease;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+.fade.visible {
+opacity: 1;
+transform: translateY(0);
 }
 
 footer {
-    text-align: center;
-    padding: 30px 0;
-    background: #f5f5f5;
-    font-size: 14px;
+text-align: center;
+padding: 40px;
+background: #1f2a44;
+color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+body {
+background: #111;
+color: #eee;
+}
+.hero {
+background: #161a22;
+}
+.alt {
+background: #1c1f27;
+}
 }
