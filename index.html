@@ -3,99 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Viviana Alejandra Díaz</title>
+
+<title>Viviana Alejandra Díaz | Geometric Mechanics</title>
+
+<meta name="description" content="Viviana Alejandra Díaz. Researcher in geometric mechanics, nonholonomic systems and structure-preserving machine learning.">
+<meta name="keywords" content="geometric mechanics, nonholonomic systems, lagrangian reduction, Hamiltonian neural networks, UNS, CONICET">
+
+<meta property="og:title" content="Viviana Alejandra Díaz">
+<meta property="og:description" content="Geometric Mechanics · Lagrangian Reduction · Structure-preserving ML">
+
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bibtex-js@0.3.0/dist/bibtex_js.min.js"></script>
 </head>
 
 <body>
 
-<header>
-    <div class="container">
-        <h1>Viviana Alejandra Díaz</h1>
-        <p class="subtitle" id="role-text">
-            Directora · Investigadora · Profesora | UNS-CONICET
-        </p>
+<header class="hero">
+<div class="hero-content">
 
-        <div class="language-switch">
-            <button onclick="setLanguage('es')">ES</button>
-            <button onclick="setLanguage('en')">EN</button>
-        </div>
+<img src="assets/img/profile.jpg" class="profile-pic" alt="Viviana Alejandra Díaz">
 
-        <nav>
-            <a href="#about" data-es="Sobre mí" data-en="About">Sobre mí</a>
-            <a href="#research" data-es="Investigación" data-en="Research">Investigación</a>
-            <a href="#publications" data-es="Publicaciones" data-en="Publications">Publicaciones</a>
-            <a href="#teaching" data-es="Docencia" data-en="Teaching">Docencia</a>
-            <a href="#service" data-es="Gestión" data-en="Service">Gestión</a>
-            <a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a>
-        </nav>
-    </div>
+<div>
+<h1>Viviana Alejandra Díaz</h1>
+<p class="subtitle">
+Geometric Mechanics · Nonholonomic Systems · Structure-Preserving AI
+</p>
+
+<div class="academic-links">
+<a href="https://orcid.org/" target="_blank">ORCID</a>
+<a href="#" target="_blank">Google Scholar</a>
+<a href="#" target="_blank">GitHub</a>
+</div>
+</div>
+
+</div>
 </header>
 
-<section id="about" class="section fade-in">
-    <div class="container">
-        <h2 data-es="Sobre mí" data-en="About">Sobre mí</h2>
-        <p data-es="Soy matemática e investigadora en mecánica geométrica, reducción lagrangiana y modelos estructuralmente consistentes en aprendizaje automático. Actualmente me desempeño como Directora Decana del Departamento de Matemática de la Universidad Nacional del Sur e investigadora del INMABB (UNS-CONICET)."
-           data-en="I am a mathematician and researcher working in geometric mechanics, Lagrangian reduction, and structure-preserving machine learning models. I currently serve as Dean of the Department of Mathematics at Universidad Nacional del Sur and researcher at INMABB (UNS-CONICET).">
-        </p>
-    </div>
+<section class="section fade">
+<h2>About</h2>
+<p>
+Mathematician and researcher at Universidad Nacional del Sur and INMABB (UNS-CONICET).
+My work focuses on geometric mechanics, Lagrangian reduction,
+nonholonomic systems, and physics-informed neural networks.
+</p>
 </section>
 
-<section id="research" class="section dark fade-in">
-    <div class="container">
-        <h2 data-es="Líneas de Investigación" data-en="Research Areas">Líneas de Investigación</h2>
-        <ul>
-            <li data-es="Mecánica geométrica y sistemas no holonómicos"
-                data-en="Geometric mechanics and nonholonomic systems"></li>
-            <li data-es="Reducción Lagrangiana y teoría variacional"
-                data-en="Lagrangian reduction and variational theory"></li>
-            <li data-es="Redes neuronales Lagrangianas y Hamiltonianas"
-                data-en="Lagrangian and Hamiltonian neural networks"></li>
-            <li data-es="Sistemas de control geométrico"
-                data-en="Geometric control systems"></li>
-        </ul>
-    </div>
+<section class="section alt fade">
+<h2>Research Areas</h2>
+<ul>
+<li>Geometric mechanics</li>
+<li>Nonholonomic systems</li>
+<li>Lagrangian and Hamiltonian neural networks</li>
+<li>Geometric control theory</li>
+</ul>
 </section>
 
-<section id="publications" class="section fade-in">
-    <div class="container">
-        <h2 data-es="Publicaciones" data-en="Publications">Publicaciones</h2>
-        <p data-es="Lista completa disponible en el CV. Artículos en revistas internacionales con referato en mecánica geométrica y sistemas dinámicos."
-           data-en="Full list available in the CV. Peer-reviewed international journal articles in geometric mechanics and dynamical systems.">
-        </p>
-        <a href="#" class="button" data-es="Descargar CV" data-en="Download CV">Descargar CV</a>
-    </div>
+<section class="section fade">
+<h2>Publications</h2>
+
+<bibtex src="publications.bib"></bibtex>
+
+<div class="bibtex_structure">
+<div class="group year" extra="DESC number">
+<div class="templates"></div>
+</div>
+</div>
+
+<div class="bibtex_template">
+<div class="pub">
+<span class="author"></span>
+(<span class="year"></span>).
+<i class="title"></i>.
+<span class="journal"></span>.
+</div>
+</div>
+
 </section>
 
-<section id="teaching" class="section dark fade-in">
-    <div class="container">
-        <h2 data-es="Docencia" data-en="Teaching">Docencia</h2>
-        <p data-es="Docente universitaria en carreras técnicas y científicas. Interés en la enseñanza de matemática aplicada e interdisciplinaria."
-           data-en="University lecturer in technical and scientific programs. Focused on applied and interdisciplinary mathematics education.">
-        </p>
-    </div>
+<section class="section alt fade">
+<h2>Academic Timeline</h2>
+<div class="timeline">
+<div class="timeline-item">
+<span class="year">2025</span>
+<p>Dean – Department of Mathematics – UNS</p>
+</div>
+<div class="timeline-item">
+<span class="year">2022</span>
+<p>Researcher – CONICET</p>
+</div>
+<div class="timeline-item">
+<span class="year">2018</span>
+<p>PhD in Mathematics</p>
+</div>
+</div>
 </section>
 
-<section id="service" class="section fade-in">
-    <div class="container">
-        <h2 data-es="Gestión y Servicio Académico" data-en="Academic Service">Gestión y Servicio Académico</h2>
-        <p data-es="Organización de eventos científicos, dirección de tesis, evaluación académica y coordinación institucional."
-           data-en="Organization of scientific events, thesis supervision, academic evaluation, and institutional coordination.">
-        </p>
-    </div>
-</section>
-
-<section id="contact" class="section dark fade-in">
-    <div class="container">
-        <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
-        <p>Email: viviana.diaz@uns.edu.ar</p>
-        <p>Bahía Blanca, Argentina</p>
-    </div>
+<section class="section fade">
+<h2>Contact</h2>
+<p>Email: viviana.diaz@uns.edu.ar</p>
+<p>Bahía Blanca, Argentina</p>
 </section>
 
 <footer>
-    <p>© 2026 Viviana Alejandra Díaz</p>
+© 2026 Viviana Alejandra Díaz
 </footer>
 
 <script src="script.js"></script>
