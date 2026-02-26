@@ -1,135 +1,209 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ale Cuello | Geometric Mechanics & Machine Learning</title>
 
-<title>Viviana Alejandra Díaz | Geometric Mechanics</title>
+<meta name="description" content="Associate Professor at Universidad Nacional del Sur. Research in geometric mechanics, nonholonomic systems, and structure-preserving machine learning.">
+<meta name="keywords" content="Geometric Mechanics, Nonholonomic Systems, Lagrangian Neural Networks, Hamiltonian Neural Networks, Differential Geometry, UNS, INMABB">
+<meta name="author" content="Ale Cuello">
 
-<meta name="description" content="Viviana Alejandra Díaz. Researcher in geometric mechanics, nonholonomic systems and structure-preserving machine learning.">
-<meta name="keywords" content="geometric mechanics, nonholonomic systems, lagrangian reduction, Hamiltonian neural networks, UNS, CONICET">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<meta property="og:title" content="Viviana Alejandra Díaz">
-<meta property="og:description" content="Geometric Mechanics · Lagrangian Reduction · Structure-preserving ML">
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #111;
+  --accent: #1f4ed8;
+  --soft: #f3f4f6;
+}
 
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<script src="https://cdn.jsdelivr.net/npm/bibtex-js@0.3.0/dist/bibtex_js.min.js"></script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Viviana Alejandra Díaz",
-  "url": "https://vivialediaz.github.io",
-  "sameAs": [
-    "https://orcid.org/0000-0002-0420-7864"
-  ],
-  "affiliation": {
-    "@type": "Organization",
-    "name": "Universidad Nacional del Sur"
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f172a;
+    --text: #f1f5f9;
+    --soft: #1e293b;
   }
 }
-</script>
-  
-</head>
 
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: var(--soft);
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+}
+
+.lang-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+</style>
+
+<script>
+function toggleLang() {
+  const elements = document.querySelectorAll("[data-es]");
+  elements.forEach(el => {
+    if (el.innerHTML === el.getAttribute("data-en")) {
+      el.innerHTML = el.getAttribute("data-es");
+    } else {
+      el.innerHTML = el.getAttribute("data-en");
+    }
+  });
+}
+</script>
+
+</head>
 <body>
 
-<header class="hero">
-<div class="hero-content">
+<div class="lang-toggle" onclick="toggleLang()">ES / EN</div>
 
-<img src="assets/img/profile.jpg" class="profile-pic" alt="Viviana Alejandra Díaz">
+<header>
+  <h1>Ale Cuello</h1>
+  <p data-en="Associate Professor – Universidad Nacional del Sur"
+     data-es="Profesora Adjunta – Universidad Nacional del Sur">
+     Associate Professor – Universidad Nacional del Sur
+  </p>
 
-<div>
-<h1>Viviana Alejandra Díaz</h1>
-<p class="subtitle">
-Geometric Mechanics · Nonholonomic Systems · Structure-Preserving AI
-</p>
+  <p data-en="Researcher – INMABB"
+     data-es="Investigadora – INMABB">
+     Researcher – INMABB
+  </p>
 
-<div class="academic-links">
-<a href="https://orcid.org/0000-0002-0420-7864" target="_blank" rel="noopener">
-ORCID
-</a>
-
-<a href="https://scholar.google.com/" target="_blank" rel="noopener">
-Google Scholar
-</a>
-</div>
-
-</div>
+  <div>
+    <a class="button" href="CV.pdf">CV</a>
+    <a class="button" href="https://scholar.google.com/citations?user=tGgDxrYAAAAJ&hl=es" target="_blank">Google Scholar</a>
+    <a class="button" href="#">ORCID</a>
+    <a class="button" href="mailto:yourmail@uns.edu.ar">Contact</a>
+  </div>
 </header>
 
-<section class="section fade">
-<h2>About</h2>
-<p>
-Mathematician and researcher at Universidad Nacional del Sur and INMABB (UNS-CONICET).
-My work focuses on geometric mechanics, Lagrangian reduction,
-nonholonomic systems, and physics-informed neural networks.
+<section>
+<h2 data-en="About" data-es="Sobre mí">About</h2>
+
+<p data-en="I am Associate Professor at the Department of Mathematics, Universidad Nacional del Sur, and researcher at INMABB. I received my PhD in Mathematics in 2008 (UNS)."
+   data-es="Soy Profesora Adjunta del Departamento de Matemática de la Universidad Nacional del Sur e investigadora del INMABB. Obtuve el Doctorado en Matemática en 2008 (UNS).">
+I am Associate Professor at the Department of Mathematics, Universidad Nacional del Sur, and researcher at INMABB. I received my PhD in Mathematics in 2008 (UNS).
+</p>
+
+<p data-en="My research focuses on geometric mechanics, nonholonomic systems, reduction theory, variational calculus, and structure-preserving machine learning."
+   data-es="Mi investigación se centra en mecánica geométrica, sistemas no holonómicos, teoría de reducción, cálculo variacional y aprendizaje automático que preserva estructura.">
+My research focuses on geometric mechanics, nonholonomic systems, reduction theory, variational calculus, and structure-preserving machine learning.
 </p>
 </section>
 
-<section class="section alt fade">
-<h2>Research Areas</h2>
+<section>
+<h2 data-en="Research Areas" data-es="Líneas de investigación">Research Areas</h2>
+
 <ul>
-<li>Geometric mechanics</li>
-<li>Nonholonomic systems</li>
-<li>Lagrangian and Hamiltonian neural networks</li>
-<li>Geometric control theory</li>
+<li>Geometric Mechanics</li>
+<li>Nonholonomic Systems & Symmetry Reduction</li>
+<li>Variational Methods & Griffiths Formalism</li>
+<li>Lagrangian and Hamiltonian Neural Networks</li>
+<li>Structure-Preserving Machine Learning</li>
+<li>Geometric Control & Lyapunov Methods</li>
 </ul>
 </section>
 
-<section class="section fade">
-<h2>Publications</h2>
+<section>
+<h2 data-en="Publications" data-es="Publicaciones">Publications</h2>
 
-<bibtex src="publications.bib"></bibtex>
+<p>
+Full publication list available on 
+<a href="https://scholar.google.com/citations?user=tGgDxrYAAAAJ&hl=es" target="_blank">
+Google Scholar
+</a>.
+</p>
 
-<div class="bibtex_structure">
-<div class="group year" extra="DESC number">
-<div class="templates"></div>
-</div>
-</div>
-
-<div class="bibtex_template">
-<div class="pub">
-<span class="author"></span>
-(<span class="year"></span>).
-<i class="title"></i>.
-<span class="journal"></span>.
-</div>
-</div>
-
+<p>(Optional: integrate BibTeX or dynamic script here)</p>
 </section>
 
-<section class="section alt fade">
-<h2>Academic Timeline</h2>
-<div class="timeline">
-<div class="timeline-item">
-<span class="year">2025</span>
-<p>Dean – Department of Mathematics – UNS</p>
-</div>
-<div class="timeline-item">
-<span class="year">2022</span>
-<p>Researcher – CONICET</p>
-</div>
-<div class="timeline-item">
-<span class="year">2018</span>
-<p>PhD in Mathematics</p>
-</div>
-</div>
+<section>
+<h2 data-en="Research Projects" data-es="Proyectos financiados">Research Projects</h2>
+
+<ul>
+<li><strong>Project Title</strong> – Funding Agency – Role – Years</li>
+<li><strong>Project Title</strong> – Funding Agency – Role – Years</li>
+</ul>
 </section>
 
-<section class="section fade">
-<h2>Contact</h2>
-<p>Email: viviana.diaz@uns.edu.ar</p>
-<p>Bahía Blanca, Argentina</p>
+<section>
+<h2 data-en="Students Supervised" data-es="Dirección de estudiantes">Students Supervised</h2>
+
+<h3>PhD</h3>
+<ul>
+<li>Name – Thesis Title – Year – Status</li>
+</ul>
+
+<h3>MSc</h3>
+<ul>
+<li>Name – Thesis Title – Year – Status</li>
+</ul>
 </section>
 
-<footer>
-© 2026 Viviana Alejandra Díaz
+<section>
+<h2 data-en="Teaching" data-es="Docencia">Teaching</h2>
+
+<ul>
+<li>Undergraduate Mathematics</li>
+<li>Graduate Courses in Geometric Mechanics</li>
+</ul>
+</section>
+
+<section>
+<h2 data-en="Academic Service" data-es="Actividad académica">Academic Service</h2>
+
+<ul>
+<li>Journal Referee</li>
+<li>Conference Committees</li>
+<li>Scientific Event Organization</li>
+</ul>
+</section>
+
+<footer style="text-align:center; padding:2rem; font-size:0.9rem;">
+© 2026 Ale Cuello – Bahía Blanca, Argentina
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
